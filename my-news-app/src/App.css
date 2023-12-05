@@ -1,0 +1,27 @@
+/* App.css */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  /* Sesuaikan komponen lainnya untuk tampilan tablet */
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  /* Sesuaikan komponen lainnya untuk tampilan mobile */
+}
