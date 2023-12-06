@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import NewsList from "./components/NewsList";
-import { fetchNews } from "./api/api";
+import { fetchNews } from "./api/news";
 import "./App.css";
 
 const App = () => {
