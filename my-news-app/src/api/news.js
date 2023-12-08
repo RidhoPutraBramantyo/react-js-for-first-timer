@@ -1,6 +1,9 @@
 export const fetchNews = async () => {
   try {
-    const response = await fetch("/newsData.json"); // Mengakses file JSON dari direktori public
+    // Menambahkan headers untuk mengontrol cache
+    const response = await fetch("/newsData.json", {
+      headers: { "Cache-Control": "no-cache" },
+    });
     const data = await response.json();
     return data.articles;
   } catch (error) {
